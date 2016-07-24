@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
 
-	before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+	before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :join, :quit]
 	before_action :find_group_and_check_auth, only: [:edit, :update, :destroy]
 
 	def index
